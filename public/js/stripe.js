@@ -2,13 +2,10 @@ import axios from 'axios'
 import showAlert from './alert'
 const bookBtn = document.querySelector('#book-tour')
 
-console.log(Stripe)
-
 const stripe = Stripe
-  ? Stripe(
-      'pk_test_51IJhl0F5NUoFgs81W0nar8kX8M8rK42kkczl0W75HH9OGAgDBf8rNAFK8PToVzcLL1YlJ14kK1yQVofdACakEFJj00rVfTUcDw'
-    )
-  : ''
+Stripe(
+  'pk_test_51IJhl0F5NUoFgs81W0nar8kX8M8rK42kkczl0W75HH9OGAgDBf8rNAFK8PToVzcLL1YlJ14kK1yQVofdACakEFJj00rVfTUcDw'
+)
 
 export const bookTour = async (tourId) => {
   try {
