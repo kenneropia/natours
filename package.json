@@ -4,7 +4,7 @@
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "start-big": "nodemon --max-old-space-size=2096 server.js",
     "start:prod": "node  server.js --NODE_ENV:production",
     "debug": "ndb server.js",
